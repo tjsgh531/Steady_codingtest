@@ -1,6 +1,5 @@
 from collections import deque
 
-from defusedxml import DTDForbidden
 
 def solution(total, selectarr):
     totalnum = total
