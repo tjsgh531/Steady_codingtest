@@ -1,0 +1,4 @@
+행운의 바퀴
+https://www.acmicpc.net/problem/2840
+
+연결리스트 문제라고 하지만 그냥 리스트로 풀리겠는데??
