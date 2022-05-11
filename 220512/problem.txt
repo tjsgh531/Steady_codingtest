@@ -1,0 +1,2 @@
+요세푸스 순열 - Linked list
+https://www.acmicpc.net/problem/1158
