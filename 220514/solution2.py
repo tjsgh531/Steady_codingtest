@@ -49,9 +49,6 @@ def solution(cars):
             elif newpos == 4:
                 return 0
 
-    #2또는 3으로 막혀있는 길
-    else:
-
         
 print(solution([[0,2,0,0,0],[0,4,2,0,0],[0,2,0,0,0],[0,0,0,2,1],[0,0,0,2,0]]))
                     
