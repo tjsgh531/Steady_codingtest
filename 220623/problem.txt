@@ -1,0 +1,5 @@
+1931번 : 회의실 배정
+-그리디 알고리즘
+
+
+https://www.acmicpc.net/problem/1931
