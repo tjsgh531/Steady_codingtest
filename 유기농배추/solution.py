@@ -1,24 +1,5 @@
 from collections import deque
 
-N = int(input())
-graphs = []
-
-for _ in range(N):
-    M,N,K = map(int, input().split())
-    graph = [[0 * M] for _ in range(N)]
-    for _ in range(K):
-        row, col = map(int, input().split())
-        graph[row][col] = 1
-    graphs.append([M, N, graph])
-
-dy = [-1, 1, 0, 0]
-dx = [0, 0, 1, -1]
-
-for item in graphs:
-    maxrow = item[0]
-    maxcol = item[1]
-    graph = item[2]
-
 def solution():
     ans = 0
     global maxrow, maxcol
@@ -46,5 +27,39 @@ def linkland(row, col):
 
             if graph[ny][nx] == 1:
                 graph[ny][nx] = 0
-                q.append(ny,nx)
-                
+                q.append([ny,nx])
+# N = int(input())
+graphs = []
+
+
+for _ in range(N):
+    M,N,K = map(int, input().split())
+    graph = [[0 * M] for _ in range(N)]
+    for _ in range(K):
+        row, col = map(int, input().split())
+        graph[row][col] = 1
+    graphs.append([M, N, graph])
+
+"""
+graphs = [ [10, 8, [
+            [1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 
+            [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 0, 1, 0, 0, 1, 1, 1],
+            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+            ]
+        ]
+"""
+
+dy = [-1, 1, 0, 0]
+dx = [0, 0, 1, -1]
+
+for item in graphs:
+    maxcol = item[0]
+    maxrow = item[1]
+    graph = item[2]
+
+solution()
