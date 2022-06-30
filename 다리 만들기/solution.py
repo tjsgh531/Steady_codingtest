@@ -10,7 +10,7 @@ check = [[False] *  N for _ in range(N)]
 dx = [-1 , 0 , 0 , 1]
 dy = [0 , -1 , 1 , 0]
 
-ans = sys.maxsize # 이건 뭘까요??
+ans = sys.maxsize # 이건 뭘까요?? 최대 정수 값
 count = 1
 
 # map print
