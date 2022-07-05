@@ -1,0 +1,6 @@
+11299번 ATM
+
+그리디 알고리즘
+정렬
+
+https://www.acmicpc.net/problem/11399
