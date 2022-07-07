@@ -1,0 +1,7 @@
+10773번 : 제로
+
+구현
+자료 구조
+스택
+
+https://www.acmicpc.net/problem/10773
