@@ -1,0 +1,6 @@
+10828번 : 스택
+
+자료 구조
+스택
+
+https://www.acmicpc.net/problem/10828
