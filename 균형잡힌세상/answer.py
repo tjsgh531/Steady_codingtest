@@ -25,4 +25,5 @@ while 1:
                 break
     if string == '.':
         break
+    
     print("yes" if true_flag and not(stack) else "no")

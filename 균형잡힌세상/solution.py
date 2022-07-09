@@ -1,3 +1,7 @@
+# 설마 
+import sys
+
+input = sys.stdin.readline
 
 sen = []
 while 1:
