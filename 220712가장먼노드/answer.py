@@ -16,7 +16,7 @@ def bfs(v, visited, adj):
 def solution(n, edge):
     answer = 0
     visited = [-1] * (n + 1)
-    adj = [[] for _ in range(n + 1)]
+    adj = [[] for _ in range(n + 1)] #인접 노드 리스트
     for e in edge:
         x = e[0]
         y = e[1]
