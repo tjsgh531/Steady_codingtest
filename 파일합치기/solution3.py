@@ -10,7 +10,7 @@ def solution(data , n, cnt):
                     newdata.append(newitem)
                     cnt += newitem
                     tempdata.clear()
-            return solution(data, len(data), cnt)
+            return solution(newdata, len(newdata), cnt)
         else:
             maxval = max(data)
             for i in data:
@@ -19,13 +19,21 @@ def solution(data , n, cnt):
                 else:
                     tempdata.append(i)
                     if len(tempdata) == 2:
-                        newdata.append(sum(tempdata))
+                        newitem = sum(tempdata)
+                        newdata.append(newitem)
+                        cnt += newitem
                         tempdata.clear()
             return solution(newdata, len(newdata), cnt)
 
     else:
         return cnt
+
+answer = []
 T = int(input())
 for i in range(T):
     N = int(input())
     data = list(map(int, input().split()))
+    answer.append(solution(data, N, 0))
+
+for i in answer:
+    print(i)
