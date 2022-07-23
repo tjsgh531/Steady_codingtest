@@ -33,8 +33,9 @@ def connect(pattern, current, n):
                 print(printpattern(dup_pattern) )
             
 answer = 0
-for i in range(3):
-    for j in range(3):
-        init_pattern = init((i,j))
-        connect(init_pattern, (i,j), 4)
+for k in range(4,10):
+    for i in range(3):
+        for j in range(3):
+            init_pattern = init((i,j))
+            connect(init_pattern, (i,j), k)
 print(answer)
