@@ -1,7 +1,13 @@
-N = int(input())
-dp = [0] * (N+1)
+def solution():
+    for i in range(1, N+1):
+        answer[i] = min(answer[i], answer[i-1] +1)
+        if i % 3 == 0:
+            answer[i] = min(answer[i], answer[i//3] + 1)
+        if i % 2 == 0:
+            answer[i] = min(answer[i], answer[i//2] + 1)
+        print(f"i : {i} \t answer : {answer}")
 
-for i in range(2, N+1):
-    dp[i] = dp[i-1] + 1
-    if i % 3 == 0:
-        
+N = int(input())
+answer = list(range(N+1))
+solution()
+print(answer[-1])
