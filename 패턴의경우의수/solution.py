@@ -31,11 +31,10 @@ def connect(pattern, current, n):
                 answer += 1
                 print(f"answer  : {answer}")
                 print(printpattern(dup_pattern) )
-            
+K = int(input())           
 answer = 0
-for k in range(4,10):
-    for i in range(3):
-        for j in range(3):
-            init_pattern = init((i,j))
-            connect(init_pattern, (i,j), k)
+for i in range(3):
+    for j in range(3):
+        init_pattern = init((i,j))
+        connect(init_pattern, (i,j), K)
 print(answer)
