@@ -1,3 +1,4 @@
+# 정규표현식 
 import re
 
 def solution(new_id):
@@ -11,10 +12,10 @@ def solution(new_id):
     new_id3 = re.sub('[.]+', '.', new_id2)
     print(new_id3)
     #4
-    new_id4 = re.sub('^[.]|[.]$', '', new_id3 )
+    new_id4 = re.sub('^[.] | [.]$', '', new_id3 )
     print(new_id4)
     #5
-    if len(new_id4) <= 0 : 
+    if len(new_id4) == 0 : 
         new_id4 = "a"
         print(new_id4)
     #6
@@ -25,7 +26,7 @@ def solution(new_id):
         print(new_id4)
     #7
     while len(new_id4) <= 2:
-        new_id4 = new_id4 + new_id4[-1]
+        new_id4 += new_id4[-1]
         print(new_id4)
     
     return new_id4
