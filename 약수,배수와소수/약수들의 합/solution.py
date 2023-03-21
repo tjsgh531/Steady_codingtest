@@ -8,11 +8,8 @@ while(1):
         if n % i == 0:
             measures.append(i)
     
-    print(sum(measures))
-    
     if n == sum(measures):
-        temp = " + ".join(list(map(chr, measures)))
-        print(temp)
+        temp = " + ".join(list(map(str, measures)))
         print(f"{n} = {temp}" )
     else:
-        print(f"{n} = is NOT perfect.")
+        print(f"{n} is NOT perfect.")
